@@ -1,0 +1,39 @@
+---
+const navItems = [
+    {
+        name: "Home",
+        link: "/",
+    },
+    {
+        name: "About",
+        link: "/about",
+    },
+    {
+        name: "Services",
+        link: "/services",
+    },
+    {
+        name: "Contact",
+        link: "/contacto",
+    },
+];
+---
+
+<header class="bg-red-600 px-12 py-3 sticky top-0 z-50">
+    <nav class="max-w-6xl flex justify-between items-center mx-auto">
+        <div>
+            <img src="lego11.png" alt="" class="h-14" />
+        </div>
+
+        <ul class="flex gap-10 text-lg font-bold text-white">
+            {navItems.map((link) => <a href={link.link}>{link.name}</a>)}
+        </ul>
+    </nav>
+</header>
+
+<style>
+    nav ul a:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+    }
+</style>

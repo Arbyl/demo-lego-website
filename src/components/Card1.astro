@@ -1,0 +1,41 @@
+---
+import Arrow from './icons/Arrow.astro';
+
+const { title, body, href } = Astro.props;
+const { class: className } = Astro.props;
+---
+
+<article
+    class=`rounded-xl flex flex-col  items-end p-6 ${className}`
+>
+    <section class="max-w-md flex flex-col gap-6 items-center">
+        <div>
+            <h1 class="text-4xl text-white font-bold text-pretty">
+                {title}
+            </h1>
+            <p class="text-2xl text-white text-pretty mt-6">{body}</p>
+        </div>
+        <a class=" flex items-center 
+            py-2 px-4
+            bg-yellow-400/50 border-yellow-300 border-4 rounded-full
+            text-white font-bold text-lg
+            w-max mr-16
+            hover:scale-110 
+            transition-transform duration-100 ease-in" 
+            href={href}>Míralo aquí <Arrow class="size-7"/></a>
+    </section>
+</article>
+
+<style>
+    article {
+        background-image: url("https://www.lego.com/cdn/cs/set/assets/blt0f8bff9dc79b837e/10320_alt7.jpg?format=webply&fit=bounds&quality=75&width=1200&height=1200&dpr=1");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+
+        h1, p, a{
+            text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.7);
+        }
+</style>

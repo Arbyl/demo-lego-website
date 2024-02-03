@@ -1,0 +1,76 @@
+---
+import Fb from "./icons/Fb.astro";
+import IG from "./icons/IG.astro";
+import TikTok from "./icons/TikTok.astro";
+import Xlogo from "./icons/Xlogo.astro";
+import Yt from "./icons/Yt.astro";
+---
+<!-- espacio externo del footer -->
+<footer class=" relative bg-red-600/80 p-10">
+    
+    <!-- seccion de items internos del footer -->
+    <section class="inside flex justify-between max-w-6xl mx-auto [&>article]:flex [&>article]:flex-col [&>article]:gap-4 ">
+        <article>
+            <h2 class="text-lg font-bold">Síguenos en nuestras redes</h2>
+            <p>Tenemos mucho que contarte en:</p>
+            <ul class="flex gap-6">
+                <li class="hover:scale-125"><a href="https://www.facebook.com/"><Fb class="size-6"/> </a></li>
+                <li class="hover:scale-125"><a href="https://twitter.com/"> <IG class="size-6"/></a></li>
+                <li class="hover:scale-125"><a href="https://www.instagram.com/"> <TikTok class="size-6"/> </a></li>
+                <li class="hover:scale-125"><a href="https://www.youtube.com/"> <Xlogo class="size-6"/></a></li>
+                <li class="hover:scale-125"><a href="https://www.youtube.com/"> <Yt class="size-6"/></a></li>
+            </ul>
+        </article>
+        
+        <article class="info">
+            <h2 class="text-lg font-bold">Información</h2>
+            <ul class="flex flex-col gap-2">
+                <li><a href="#">Politica de privacidad</a></li>
+                <li><a href="#">Terminos y condiciones</a></li>
+                <li><a href="#">Politica de cookies</a></li>
+            </ul>
+        </article>
+    
+        <article class="info">
+            <h2 class="text-lg font-bold">Tienda</h2>
+            <ul class="flex flex-col gap-2">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Nuevos productos</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Trabaja con nosotros</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+            </ul>
+        </article>
+    </section>
+    
+    <section class="flex flex-col justify-center max-w-2xl mt-6 mx-auto">
+        <p class="text-sm text-center">© 2024 Casi Todos los derechos reservados - Sitio no oficial ni para su comercialización </p>
+        <p class="text-sm text-center">desarrollado por Andres Robayo en  <a class="font-bold hover:underline" href="">arbyl.me</a></p>
+    </section>
+</footer>
+
+<style>
+    ul li {  
+        font-size: small;
+    }
+
+    .info ul li:hover {  
+        transform: scale(1.04);
+    }
+
+    ul li a:hover{  
+        text-decoration: underline;
+    }
+
+    .inside::after{
+        content: "";
+        background-image: url('lego1.png');
+        background-size: cover;
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        top:-70px;
+        left: 75%;
+    }
+</style>

@@ -1,0 +1,86 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Arrow from "../components/icons/Arrow.astro";
+---
+
+<Layout title="Lego Website">
+    <main class="mx-auto max-w-6xl my-6 flex relative">
+        <article class="[&>section]:my-14 w-full text-black/80">
+            <section>
+                <h2>Nuestra Historia</h2>
+                <p>
+                    En Lego, nos apasiona la creatividad y la diversión que solo
+                    los bloques de Lego pueden ofrecer. Desde nuestra fundación
+                    en <em>Año de Fundación</em>, hemos estado comprometidos en
+                    proporcionar experiencias únicas y emocionantes para todos
+                    los amantes de Lego.
+                </p>
+            </section>
+
+            <section>
+                <h2>Nuestra Misión</h2>
+                <p>
+                    Nuestra misión es inspirar y fomentar la creatividad a
+                    través del juego con Lego. Creemos en la importancia del
+                    aprendizaje lúdico y en la capacidad de los bloques de
+                    construcción para estimular la imaginación, la resolución de
+                    problemas y el trabajo en equipo.
+                </p>
+            </section>
+
+            <section>
+                <h2>Lo que Ofrecemos</h2>
+                <p>
+                    En Lego, ofrecemos una amplia variedad de sets de Lego para
+                    todas las edades y gustos. Ya sea que seas un constructor
+                    novato o un experto constructor de estructuras elaboradas,
+                    tenemos algo para ti. Además, organizamos eventos y talleres
+                    para compartir la pasión por Lego con nuestra comunidad.
+                </p>
+            </section>
+
+            <section>
+                <h2>Contacto</h2>
+                <p>
+                    Estamos aquí para responder cualquier pregunta o inquietud
+                    que puedas tener. ¡No dudes en ponerte en contacto con
+                    nosotros a través de nuestro <a href="#formulario"
+                        >formulario de contacto</a
+                    > o en nuestras redes sociales!
+                </p>
+                <a
+                    class="flex items-center mx-auto mt-8
+            py-2 px-4
+            bg-red-400/50 border-red-300 border-4 rounded-full
+            text-black/80 font-bold text-lg
+            w-max
+            hover:scale-110
+            transition-transform duration-100 ease-in"
+                    href="/contacto">Escribenos</a
+                >
+            </section>
+        </article>
+        <div class="w-full h-auto flex justify-end">
+            <img
+                src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6433/6433974_rd.jpg"
+                alt=""
+                class="sticky h-[700px] w-[450px] object-cover top-40 right-0"
+            />
+        </div>
+    </main>
+</Layout>
+
+<style>
+    section h2 {
+        font-size: 28px;
+        font-weight: bold;
+        text-decoration: underline #ff00009c;
+    }
+
+    section p {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    section > a {
+    }
+</style>
