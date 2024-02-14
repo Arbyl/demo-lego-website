@@ -1,39 +1,138 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Lego Website">
-<main class="mx-auto max-w-6xl my-3">
+    <main class="mx-auto max-w-6xl my-3">
+        <h1 class="text-4xl font-bold underline my-10">Nuestros Servicios</h1>
+        <section class="flex flex-col [&>section]:flex text-pretty">
+            <section>
+                <h2 class="bg-slate-500">Sets de Lego para Todas las Edades</h2>
+                <div>
+                    <img src="https://www.lego.2com/cdn/cs/set/assets/blt1f8552d96eb0cf25/Insiders-SignUp-202309-Block-Mixed-Large-Community.jpg?fit=crop&format=webply&quality=80&width=650&height=720&dpr=1" alt="" />
+                    <p>
+                        Descubre nuestra amplia selección de sets de Lego
+                        diseñados para todas las edades. Desde sets básicos para
+                        niños hasta complejas estructuras para expertos
+                        constructores, tenemos algo para cada nivel de habilidad
+                        y gusto.
+                    </p>
+                </div>
+            </section>
 
-    <h1>Nuestros Servicios</h1>
+            <section class="flex-row-reverse">
+                <h2 class="bg-slate-500">Eventos y Talleres</h2>
+                <div>
+                    <img src="" alt="" />
+                    <p>
+                        Participa en nuestros emocionantes eventos y talleres
+                        dedicados a la comunidad de constructores de Lego. Desde
+                        competiciones de construcción hasta sesiones de
+                        aprendizaje, ofrecemos oportunidades para que te
+                        involucres y te diviertas con otros amantes de Lego.
+                    </p>
+                </div>
+            </section>
 
-    <section>
-        <h2>Sets de Lego para Todas las Edades</h2>
-        <p>Descubre nuestra amplia selección de sets de Lego diseñados para todas las edades. Desde sets básicos para niños hasta complejas estructuras para expertos constructores, tenemos algo para cada nivel de habilidad y gusto.</p>
-    </section>
+            <section>
+                <h2 class="bg-slate-500">Servicios Personalizados</h2>
+                <div>
+                    <img src="" alt="" />
+                    <p>
+                        ¿Tienes una idea específica en mente? Ofrecemos
+                        servicios de construcción personalizados para convertir
+                        tus visiones en realidad. Contáctanos para discutir tus
+                        necesidades y crear algo único junto a nuestro equipo de
+                        constructores expertos.
+                    </p>
+                </div>
+            </section>
 
-    <section>
-        <h2>Eventos y Talleres</h2>
-        <p>Participa en nuestros emocionantes eventos y talleres dedicados a la comunidad de constructores de Lego. Desde competiciones de construcción hasta sesiones de aprendizaje, ofrecemos oportunidades para que te involucres y te diviertas con otros amantes de Lego.</p>
-    </section>
+            <section class="flex-row-reverse">
+                <h2 class="bg-slate-500">Asesoramiento y Soporte</h2>
+                <div>
+                    <img src="" alt="" />
+                    <p>
+                        Nuestro equipo está aquí para ofrecerte asesoramiento y
+                        soporte. Ya sea que necesites ayuda para elegir el set
+                        adecuado o que tengas preguntas sobre técnicas de
+                        construcción, estamos comprometidos a brindarte la mejor
+                        experiencia Lego posible.
+                    </p>
+                </div>
+            </section>
+        </section>
 
-    <section>
-        <h2>Servicios Personalizados</h2>
-        <p>¿Tienes una idea específica en mente? Ofrecemos servicios de construcción personalizados para convertir tus visiones en realidad. Contáctanos para discutir tus necesidades y crear algo único junto a nuestro equipo de constructores expertos.</p>
-    </section>
+        <div class="my-14 text-3xl font-bold text-center px-10 text-balance">
+            Explora nuestros servicios y sumérgete en el emocionante mundo de
+            Lego con nosotros.
+        </div>
+        <div class="flex justify-between">
+            <img src="batmanlego.png" alt="">
+            <img src="ironmanlego.png" alt="" class="-scale-x-100">
+        </div>
 
-    <section>
-        <h2>Asesoramiento y Soporte</h2>
-        <p>Nuestro equipo está aquí para ofrecerte asesoramiento y soporte. Ya sea que necesites ayuda para elegir el set adecuado o que tengas preguntas sobre técnicas de construcción, estamos comprometidos a brindarte la mejor experiencia Lego posible.</p>
-    </section>
+    </main>
 
-    <p>Explora nuestros servicios y sumérgete en el emocionante mundo de Lego con nosotros.</p>
+    <style>
+        section {
+            box-sizing: border-box;
+            min-height: 500px;
+        }
+        section h2 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: larger;
+        }
 
+        section div{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+        p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
 
-</main>
+            color: white;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-size: larger;
+        }
 
+        section h2,
+        section div {
+            padding: 30px;
+        }
 
+        section section:nth-child(4) div{
+            background-image: url('https://www.lego.com/cdn/cs/set/assets/blt1f8552d96eb0cf25/Insiders-SignUp-202309-Block-Mixed-Large-Community.jpg?fit=crop&format=webply&quality=80&width=650&height=720&dpr=1');
+            background-size: cover;
+        }
 
+        section section:nth-child(3) div{
+            background-image: url('https://www.lego.com/cdn/cs/set/assets/blt8795861e5e59eaa6/Insiders-SignUp-202309-Block-Mixed-Large-Creativity.jpg?fit=crop&format=webply&quality=80&width=650&height=720&dpr=1');
+            background-size: cover;
+        }
 
-    
+        section section:nth-child(2) div{
+            background-image: url('https://www.lego.com/cdn/cs/set/assets/blt110725432260bd5e/XX-MixedContentBlock-LEGOInsiders-LoggedIn-Large-01.png?fit=crop&format=webply&quality=80&width=650&height=720&dpr=1');
+            background-size: cover;
+        }
+
+        section section:nth-child(1) div{
+            background-image: url('https://www.lego.com/cdn/cs/set/assets/blt4e5de1370c9f5458/Insiders-Launch-2308-Block-Standard-3.jpg?fit=crop&format=webply&quality=80&width=635&height=440&dpr=1');
+            background-size: cover;
+        }
+
+        
+    </style>
 </Layout>
