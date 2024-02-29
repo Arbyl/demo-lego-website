@@ -1,3 +1,9 @@
+Clon de la pagina de lego utilizando Astro 
+
+![image](https://github.com/Arbyl/demo-lego-website/assets/73619752/861737ed-7727-44ff-aaaf-924fd685fd45)
+
+
+
 # Astro Starter Kit: Basics
 
 ```sh
